@@ -15,6 +15,19 @@
   limitations under the License.
   -->
 <resources>
+    <color name="colorPrimary">@color/bluepod</color>
+    <color name="colorPrimaryDark">@color/bluepod</color>
+    <color name="colorAccent">#00b6de</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="bluepod">#002130</color>
+    <color name="black">#000000</color>
+    <color name="bg_nav">#1e1d1b</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grey_10">#808080</color>
+    <color name="grey_20">#757575</color>
+    <color name="grey_30">#b9b9b9</color>
+    <color name="grey_40">#eaeaea</color>
+    <color name="grey_50">#edecf4</color>
     <color name="tv_branding">#ffff5722</color>
     <color name="tv_branding_dark">#ffbf360c</color>
     <color name="tv_branding_accent">#00B8D4</color>
@@ -31,4 +44,36 @@
     <color name="background_gradient_start">#000000</color>
     <color name="background_gradient_end">#DDDDDD</color>
     <color name="default_background">#0096a6</color>
+
+
+    <color name="gray">#808080</color>
+    <color name="grey600">#757575</color>
+    <color name="greybz">#edecf4</color>
+    <color name="light_gray">#bfbfbf</color>
+    <color name="holo_blue_light">#33B5E5</color>
+    <color name="holo_blue_dark">#0099CC</color>
+    <color name="ics_gray">#858585</color>
+    <color name="actionbar_gray">#DDDDDD</color>
+    <color name="download_success_green">#669900</color>
+    <color name="download_failed_red">#CC0000</color>
+    <color name="status_progress">#E033B5E5</color>
+    <color name="status_playing">#E0EE5F52</color>
+    <color name="overlay_dark">#2C2C2C</color>
+    <color name="overlay_light">#FFFFFF</color>
+    <color name="swipe_refresh_secondary_color_light">#EDEDED</color>
+    <color name="swipe_refresh_secondary_color_dark">#060708</color>
+    <color name="new_indicator_green">#669900</color>
+    <color name="image_readability_tint">#80000000</color>
+
+    <!-- Use Gingerbread-orange -->
+    <color name="selection_background_color_dark">#FEBB20</color>
+    <color name="selection_background_color_light">#FEBB20</color>
+
+    <!-- Theme colors -->
+    <color name="primary_light">#F7CD2F</color>
+
+    <color name="highlight_light">#DDDDDD</color>
+    <color name="highlight_dark">#414141</color>
+
+    <color name="antennapod_blue">#147BAF</color>
 </resources>

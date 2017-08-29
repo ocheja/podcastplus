@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   Copyright (C) 2014 The Android Open Source Project
 
   Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,10 +16,16 @@
 <resources>
 
     <style name="UAmpAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorPrimary">#ffff5722</item>
-        <item name="colorPrimaryDark">#ffbf360c</item>
-        <item name="colorAccent">#ffff5722</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/bluepod</item>
         <item name="alertDialogTheme">@style/Theme.AppCompat.Dialog.Alert</item>
+    </style>
+
+    <style name="UAmpAppTheme.Splash" parent="Theme.AppCompat.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/bg_splash</item>
     </style>
 
 
@@ -31,14 +36,14 @@
              - Notification icon badge tinting
              - Overview “now playing” icon tinting
          -->
-        <item name="colorPrimaryDark">#ffbf360c</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
 
         <!-- colorAccent is used in Android Auto for:
              - Spinner
              - progress bar
              - floating action button background (Play/Pause in media apps)
          -->
-        <item name="colorAccent">@color/bt_accent</item>
+        <item name="colorAccent">@color/colorAccent</item>
     </style>
 
     <style name="WearTheme" parent="UAmpAppTheme">
@@ -46,10 +51,15 @@
              - Card background on media browse
              - Card background on 4-way media controls
          -->
-        <item name="colorPrimaryDark">#ffbf360c</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
     </style>
 
 
-    <style name="Theme.UAmp.TVLeanback" parent="Theme.Leanback">
-    </style>
+    <style name="Theme.UAmp.TVLeanback" parent="Theme.Leanback"></style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="UAmpAppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="UAmpAppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

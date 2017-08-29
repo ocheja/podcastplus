@@ -19,11 +19,35 @@
         <item
             android:id="@+id/navigation_allmusic"
             android:checked="true"
-            android:icon="@drawable/ic_allmusic_black_24dp"
-            android:title="@string/drawer_allmusic_title"/>
+            android:icon="@drawable/ic_home_white_24px"
+            android:title="@string/drawer_latest_title"/>
+        <item
+            android:id="@+id/navigation_categories"
+            android:icon="@drawable/ic_library_music_white_24px"
+            android:title="@string/drawer_discover_title"/>
+        <item
+            android:id="@+id/navigation_top"
+            android:icon="@drawable/ic_playlist_music_black_24dp"
+            android:title="Top"/>
+
+        <item
+            android:id="@+id/navigation_download"
+            android:icon="@drawable/ic_playlist_music_black_24dp"
+            android:title="Download"/>
+
         <item
             android:id="@+id/navigation_playlists"
             android:icon="@drawable/ic_playlist_music_black_24dp"
             android:title="@string/drawer_playlists_title"/>
+
     </group>
+    <item>
+        <menu>
+            <item
+                android:id="@+id/navigation_logout"
+                android:icon="@drawable/ic_power_settings_new_white_24px"
+                android:title="@string/drawer_logout" />
+
+        </menu>
+    </item>
 </menu>

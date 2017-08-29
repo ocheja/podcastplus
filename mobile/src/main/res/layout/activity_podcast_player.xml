@@ -1,0 +1,162 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_audio_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#0f0529"
+        android:alpha="0.9"
+        android:id="@+id/linearLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/now_playing_text"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:text="@string/now_playing"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="normal"
+                android:textAlignment="center"
+                android:layout_weight="0.41"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.58">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Rew"
+                    android:id="@+id/button2"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="#150535"
+                    android:textColor="#ffffff"
+                    android:onClick="forward" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Pause"
+                    android:id="@+id/button"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="#1b0645"
+                    android:textColor="#ffffff"
+                    android:onClick="pause" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button4"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="#1c085c"
+                    android:textColor="#ffffff"
+                    android:onClick="play" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Forw"
+                    android:id="@+id/button3"
+                    android:layout_weight="1"
+                    android:textColor="#ffffff"
+                    android:background="#2c1a6c"
+                    android:onClick="nextTrack" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Dwnld"
+                    android:id="@+id/button5"
+                    android:layout_weight="1"
+                    android:textColor="#ffffff"
+                    android:background="#3e2e66"
+                    android:onClick="downloadMix" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/coverImage"
+        android:layout_centerHorizontal="true"
+        android:scaleType="center"
+        android:src="@drawable/defimage"
+        android:layout_above="@+id/linearLayout2" />
+
+
+    <LinearLayout
+        android:id="@+id/controls_bar"
+        android:layout_width="393dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/currentTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="00:00:00"
+            android:textColor="#FFFFFF" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" />
+
+        <TextView
+            android:id="@+id/totalTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="00:00:00"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/fullscreen_toolbar_bg_gradient"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+
+</RelativeLayout>

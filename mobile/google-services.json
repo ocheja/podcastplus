@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "930344947848",
+    "firebase_url": "https://podcast-fa821.firebaseio.com",
+    "project_id": "podcast-fa821",
+    "storage_bucket": "podcast-fa821.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:930344947848:android:10eff1e6217baa9c",
+        "android_client_info": {
+          "package_name": "com.betazoo.podcast"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "930344947848-82qoko0ficar2s7bfo6vo44od4n0kge7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.betazoo.podcast",
+            "certificate_hash": "11baab5ae7d469adaab8cc24bd82072edeb4de5d"
+          }
+        },
+        {
+          "client_id": "930344947848-rdg5qq1lti996pku6b407k6qn9iq4g5r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNUNQrg8UgEuxMjOnPkAJwdthcbA_wBFY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "930344947848-rdg5qq1lti996pku6b407k6qn9iq4g5r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
